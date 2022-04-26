@@ -35,6 +35,7 @@
       </nav>
       <section class="subheader">
         <div class="container-small">
+          <!-- <h1>Boozang Management</h1> -->
           <h1>Manage your Boozang projects here</h1>
         </div>
       </section>
@@ -42,10 +43,19 @@
     <main>
       <div class="container-small">
         <h2>Mats Ljunggrens projects</h2>
-        <button class="btn">Create Project</button>
-        <ul>
+        <!-- <button class="btn">Create Project</button> -->
+        <ul class="project-list">
+          <!-- empty item -->
+          <li class="list-item empty">
+            <div class="center-icon">
+              <button class="icon_btn" title="Add" aria-label="Add project">
+                <i class="fas fa-solid fa-plus add_icon" aria-hidden="true"></i>
+              </button>
+            </div>
+          </li>
+
+          <!-- project items -->
           <li class="list-item">
-            <a href="">First Project</a>
             <div class="icons">
               <button class="icon_btn" title="edit" aria-label="Edit project">
                 <i class="fas fa-pencil-alt edit_icon" aria-hidden="true"></i>
@@ -65,10 +75,22 @@
                 <i class="far fa-star star_icon" aria-hidden="true"></i>
               </button>
             </div>
+            <footer>
+              <a href="">First Project</a>
+            </footer>
           </li>
 
           <li class="list-item">
-            <a href="">Second Project</a>
+            <header>
+              <a href="">Second Project</a>
+              <button
+                class="icon_btn"
+                title="favourite"
+                aria-label="Favourite project"
+              >
+                <i class="far fa-star star_icon" aria-hidden="true"></i>
+              </button>
+            </header>
             <div class="icons">
               <button class="icon_btn" title="edit" aria-label="Edit project">
                 <i class="fas fa-pencil-alt edit_icon" aria-hidden="true"></i>
@@ -80,19 +102,37 @@
               >
                 <i class="fas fa-trash-alt delete_icon" aria-hidden="true"></i>
               </button>
+            </div>
+          </li>
+
+          <li class="list-item">
+            <header>
+              <a href="">Third Project</a>
               <button
                 class="icon_btn"
                 title="favourite"
                 aria-label="Favourite project"
               >
                 <i class="far fa-star star_icon" aria-hidden="true"></i>
+              </button>
+            </header>
+            <div class="icons">
+              <button class="icon_btn" title="edit" aria-label="Edit project">
+                <i class="fas fa-pencil-alt edit_icon" aria-hidden="true"></i>
+              </button>
+              <button
+                class="icon_btn"
+                title="delete"
+                aria-label="Delete project"
+              >
+                <i class="fas fa-trash-alt delete_icon" aria-hidden="true"></i>
               </button>
             </div>
           </li>
         </ul>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-link-container">
           <h3>Learning and Documentation</h3>
