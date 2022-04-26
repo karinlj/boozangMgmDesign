@@ -1,0 +1,188 @@
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: #404959;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 9px 24px;
+  transition: 0.5s all ease;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+  box-shadow: 0px 7px 15px -3px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background: #2ed16f;
+  font-family: inherit;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+a:hover,
+.btn:hover,
+.icon_btn:hover {
+  filter: brightness(90%);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 1rem 4%;
+  background: #1b284a;
+  background: #f9f9f9;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  color: #404959;
+  margin-right: 2rem;
+}
+
+.subheader {
+  background: #2a3970;
+  padding: 3rem 4%;
+}
+.subheader h1 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+main {
+  padding-top: 4rem;
+  min-height: 700px;
+}
+main .btn {
+  margin: 2.5rem 0;
+}
+main h2 {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #d5d8dd;
+  max-width: 600px;
+}
+main ul {
+  max-width: 600px;
+}
+main .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  background: #7e5da6;
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 7px 15px -3px rgba(0, 0, 0, 0.1);
+}
+main .list-item a {
+  color: #fff;
+  font-size: 1rem;
+}
+main .list-item .icon_btn {
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+main .list-item:nth-of-type(2) {
+  background: #2a3970;
+}
+
+footer {
+  padding: 2rem 4%;
+  background: #22242d;
+  color: #fff;
+}
+footer .footer-link-container {
+  margin-bottom: 6rem;
+}
+footer h3 {
+  color: #fff;
+}
+footer li {
+  padding: 5px 0;
+}
+footer li a {
+  color: #808080;
+  font-size: 0.9rem;
+}
+footer .copy {
+  font-size: 0.8rem;
+  color: #808080;
+  padding-top: 1rem;
+  border-top: 1px solid #393e46;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
