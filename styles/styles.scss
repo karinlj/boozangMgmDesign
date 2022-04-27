@@ -143,7 +143,6 @@ main {
   .project-list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
     margin-top: 3rem;
   }
   .list-item {
@@ -151,12 +150,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     // align-items: center;
-    padding: 1.5rem;
+    padding: 1.4rem 1.4rem 1rem 1.4rem;
     border-radius: $themeBorderRadius;
-    //background: $lighterPurple;
-    // background: $lightPurple;
-    background: $colorPink;
-    background: $yellow;
     box-shadow: $themeBoxShadowLight;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -165,7 +160,7 @@ main {
     header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
     }
     &.empty {
       display: flex;
@@ -175,18 +170,26 @@ main {
         font-size: 1.8rem;
       }
     }
-    .icons {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    a {
+    a.title {
       //color: #fff;
       color: $textColorDark;
       color: $darkBlue;
       font-weight: 700;
       font-size: 1.2rem;
-      text-align: center;
+    }
+    .icons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .icons-extended {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
     }
     .icon_btn {
       border: none;
@@ -194,23 +197,34 @@ main {
       color: $textColorDark;
       margin-left: 0.5rem;
     }
-    &:nth-of-type(2) {
-      background: $lightblue;
-      //background: $blue;
-    }
     &:nth-of-type(1) {
       background: $lightestGrey;
       border: dashed 2px $lightGrey;
-      //background: $blue;
+    }
+    &:nth-of-type(2) {
+      background: $lightblue;
     }
     &:nth-of-type(3) {
       background: $green;
-      //background: $blue;
     }
-
+    &:nth-of-type(4) {
+      background: $colorPink;
+      background: $yellow;
+    }
+    &:nth-of-type(5) {
+      background: $colorPink;
+    }
+    .props {
+      li {
+        padding: 3px 0;
+        line-height: 22px;
+      }
+    }
     footer {
       background: transparent;
       text-align: center;
+      padding: 0.5rem 0 0 0;
+      border-top: 1px solid $darkBlue;
     }
   }
 }
@@ -218,7 +232,7 @@ main {
 //footer
 .footer {
   padding: 2rem $sectionPadding;
-  background: $darkGrey;
+  // background: $darkGrey;
   background: $darkBlue;
   color: #fff;
   .footer-link-container {
